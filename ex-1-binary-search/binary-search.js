@@ -26,6 +26,6 @@ let sorted = arr.sort( function( a,b ){
     return a - b;
 });
 
-let result = binarySearch( sorted, 55 );
+let result = binarySearch( sorted, 32 );
 console.log( result );
 
