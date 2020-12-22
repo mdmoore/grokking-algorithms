@@ -6,7 +6,7 @@ function sum( arr ) {
         return 0;
     }
 
-    return arr[0] + sum([...arr.slice(1, arr.length)]);
+    return arr[0] + sum( arr.slice(1, arr.length ));
 }
 
 console.log(sum([1,2,3]));
