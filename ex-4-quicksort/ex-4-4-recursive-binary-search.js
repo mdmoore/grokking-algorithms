@@ -23,7 +23,7 @@ function binarySearch( arr, val ) {
 
 let arr = [17, 45, 32, 95, 234, 38, 55, 363, 71];
 
-//binary sort requires a sorted list
+//binary search requires a sorted list
 let sorted = arr.sort( function( a,b ){
     return a - b;
 });
