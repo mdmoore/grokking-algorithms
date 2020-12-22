@@ -15,9 +15,9 @@ function binarySearch( arr, val ) {
     }
 
     if ( arr[mid] > val ) {
-        return binarySearch( [...arr.slice(0, mid)], val ); // rerun search with lower half of array
+        return binarySearch( arr.slice(0, mid), val ); // rerun search with lower half of array
     } else {
-        return binarySearch( [...arr.slice(mid + 1)], val ); // rerun search with higher half of array
+        return binarySearch( arr.slice(mid + 1), val ); // rerun search with higher half of array
     }
 }
 
