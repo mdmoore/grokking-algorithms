@@ -6,7 +6,7 @@ function count( arr ) {
         return 0;
     }
 
-    return 1 + count( [...arr.splice(1, arr.length)] );
+    return 1 + count( arr.slice(1) );
 }
 
 let arr = ["one", "two", "three", "four", "five", "six"];
