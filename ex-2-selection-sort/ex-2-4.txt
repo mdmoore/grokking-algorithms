@@ -1,0 +1,14 @@
+Ex. 2.4
+
+Question:
+People sign up for Facebook pretty often, too. Suppose you decided to use an array to 
+store the list of users. What are the downsides of an array for inserts? In particular, 
+suppose you’re using binary search to search for logins. What happens when you add new 
+users to an array? 
+
+Answer:
+Arrays are going to be slower with inserts compared to linked lists.  Inserting into the 
+middle of an array requires shifting all elements after the insert location.  This could
+mean that the entire array needs to be moved to another location in memory if there's 
+not enough space in the current location.  When moved, if there's not enough contiguous
+memory available to accommodate the array, the insert won't be possible.
