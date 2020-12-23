@@ -1,21 +1,22 @@
 function lookForKey( arr ){
+    let result = "not found";
 
-    for (let i = 0; i < arr.length; i++) {
+    for ( let i = 0; i < arr.length; i++ ) {
         if( arr[i] == "key" ){
             console.log( "Key found.");
-            //return "Key found.";   - how to return when found?
+            result = "Key found";
         } else if( Array.isArray( arr[i] ) ){
-            lookForKey( arr[i] );
+            result = lookForKey( arr[i] );
         }
     }
+
+    return result;
 }
 
 let arr = [
     ["stuff", "things"],
     ["stuff", "things"],
-    ["stuff", "things", "key"],
-    ["stuff", "things"],
+    ["stuff", "things", "key"]
 ];
 
-
-console.log( lookForKey( arr ));
+console.log( lookForKey( arr ) );
